@@ -1,9 +1,0 @@
-{%- macro get_regions(deployment_scope) -%}
-  {%- if deployment_scope == 'global' -%}
-    {{ "us,emea,apac" }}
-  {%- elif deployment_scope == 'regional' -%}
-    {{ "us-east,us-west" }}
-  {%- else -%}
-    {{ "test-region" }}
-  {%- endif -%}
-{%- endmacro -%}
